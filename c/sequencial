@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+
+    
+   float quilometros_percorridos, total_pagar;  
+   int numero_dias;
+
+   
+   printf ("Informe a quilometragem percorrida: ");
+   scanf ("%f", &quilometros_percorridos);
+   
+
+   printf ("Informe o número de dias: ");
+   scanf ("%d", &numero_dias);
+   
+
+   total_pagar = numero_dias * 70 + quilometros_percorridos * 0.15;
+   
+
+   printf ("Total a pagar: %.2f", total_pagar);
+   
+
+
+    return 0;
+}

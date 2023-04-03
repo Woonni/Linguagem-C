@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+ 
+    int tipo_combustivel;
+    float litros_abastecidos, preco_litro, total;
+ 
+
+ printf("Litros abastecidos: ");
+ scanf("%f", &litros_abastecidos);
+ 
+ printf("Informe o tipo de combustível (1 - Álcool ou 2 - Gasolina): ");
+ scanf("%d", &tipo_combustivel);
+ 
+ printf("Preço por litro: ");
+ scanf("%f", &preco_litro);
+ 
+
+
+ if (tipo_combustivel == 1){
+   if(litros_abastecidos <= 20){
+     total = litros_abastecidos * preco_litro * 0.97;
+  }
+   else{
+      total = litros_abastecidos * preco_litro * 0.95;
+    }
+  }
+ else{
+     if(litros_abastecidos <= 15){
+      total = litros_abastecidos * preco_litro * 0.965;
+   }
+
+      else{
+     total = litros_abastecidos * preco_litro * 0.94;
+     }
+ }
+ 
+ printf("Total a pagar: %.2f", total);
+ 
+ return 0;
+}
